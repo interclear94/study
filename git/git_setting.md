@@ -40,3 +40,27 @@ Enter 연타 -> ~/.ssh/id_ed25519 로 키가 생성됨
 ```bash
 cat ~/.ssh/id_ed25519.pub
 ```
+
+출력된 키를 복사해서 GitHub →
+https://github.com/settings/keys
+→ New SSH key → 붙여넣기 → 저장
+
+3. 연결 테스트
+
+```sh
+ssh -T git@github.com
+```
+
+성공하면
+Hi username! You’ve successfully
+
+## .gitignore
+
+```bash
+touch .gitignore
+```
+
+.gitnore
+node_modules/ (폴더)
+.env (파일)
+dist/ (폴더)
